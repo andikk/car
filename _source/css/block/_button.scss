@@ -12,4 +12,17 @@
   background-color: $highlight_color;
   border: none;
   border-radius: 40px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+   opacity: 1;
+  }
+
+  &:focus {
+
+  }
 }

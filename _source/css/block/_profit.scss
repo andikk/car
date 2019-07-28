@@ -1,6 +1,42 @@
 .profit {
+  background-color: $primary_color;
+
   &__list {
     list-style: none;
     display: flex;
+    padding: 0;
+  }
+
+  &__item {
+    color: $secondary_color;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:hover {
+      background-color: $highlight_color;
+    }
+  }
+
+  &__number {
+    font-family: $font_display;
+    font-size: 50px;
+    line-height: 0px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  &__title {
+    font-family: $font_display;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  &__text {
+    font-family: $font_text;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
   }
 }
