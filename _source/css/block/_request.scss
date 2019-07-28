@@ -5,4 +5,12 @@
   &__fieldset {
     border: none;
   }
+
+  &__email::placeholder {
+    font-family: $font_display;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: normal;
+    opacity: 0.7;
+  }
 }

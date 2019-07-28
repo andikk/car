@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Toyota Text";
-  src: url("../font/toyota-text/Toyota-Text-Regular.eot");
-  src: url("../font/toyota-text/Toyota-Text-Regular.eot?iefix") format('embedded-opentype'),
-       url("../font/toyota-text/Toyota-Text-Regular.ttf") format("truetype"),
-       url("../font/toyota-text/Toyota-Text-Regular.woff") format("woff"),
-       url("../font/toyota-text/Toyota-Text-Regular.woff2") format("woff2");
+  src: url("../toyota-text/Toyota-Text-Regular.eot");
+  src: url("../toyota-text/Toyota-Text-Regular.eot?iefix") format('embedded-opentype'),
+       url("../toyota-text/Toyota-Text-Regular.ttf") format("truetype"),
+       url("../toyota-text/Toyota-Text-Regular.woff") format("woff"),
+       url("../toyota-text/Toyota-Text-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: "Toyota Text";
-  src: url("../font/toyota-text/Toyota-Text-Bold.eot");
-  src: url("../font/toyota-text/Toyota-Text-Bold.eot?iefix") format('embedded-opentype'),
-       url("../font/toyota-text/Toyota-Text-Bold.ttf") format("truetype"),
-       url("../font/toyota-text/Toyota-Text-Bold.woff") format("woff"),
-       url("../font/toyota-text/Toyota-Text-Bold.woff2") format("woff2");
+  src: url("../toyota-text/Toyota-Text-Bold.eot");
+  src: url("../toyota-text/Toyota-Text-Bold.eot?iefix") format('embedded-opentype'),
+       url("../toyota-text/Toyota-Text-Bold.ttf") format("truetype"),
+       url("../toyota-text/Toyota-Text-Bold.woff") format("woff"),
+       url("../toyota-text/Toyota-Text-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
