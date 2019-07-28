@@ -12,8 +12,8 @@ var gulp = require('gulp'),
     cheerio = require('gulp-cheerio'),
     svgsprite = require('gulp-svg-sprite'),
     concat = require('gulp-concat'),
-    pump = require('pump');
-
+    pump = require('pump')
+ 
 var path = {
   src: {
     js: './_source/js/**/*.js',
@@ -165,6 +165,7 @@ gulp.task('favicon:build', function (cb) {
   cb
   );
 });
+
 
 gulp.task('build', [
   'js:build',

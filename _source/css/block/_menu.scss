@@ -1,0 +1,28 @@
+.menu {
+  border-bottom: 1px solid red;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-family: $font_display;
+    font-size: 18px;
+    line-height: 85px;
+    font-weight: bold;
+    color: inherit;
+  }
+
+  &__item {
+    &:hover {
+      background-color: $highlight_color;
+      color: $secondary_color;
+    }
+  }
+
+}
+
+
+

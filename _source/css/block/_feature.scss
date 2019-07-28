@@ -1,0 +1,22 @@
+.feature {
+  &__title {
+    font-family: $font_display;
+    font-size: 12px;
+    line-height: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    font-family: $font_display;
+    font-size: 34px;
+    line-height: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+}
