@@ -1,0 +1,18 @@
+.car {
+  &__container {
+    display: flex;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__description {
+    display: flex;
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+  }
+}

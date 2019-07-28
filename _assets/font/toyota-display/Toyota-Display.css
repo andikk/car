@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Toyota Display";
+  src: url("../font/toyota-display/Toyota-Display-Regular.eot");
+  src: url("../font/toyota-display/Toyota-Display-Regular.eot?iefix") format('embedded-opentype'),
+       url("../font/toyota-display/Toyota-Display-Regular.ttf") format("truetype"),
+       url("../font/toyota-display/Toyota-Display-Regular.woff") format("woff"),
+       url("../font/toyota-display/Toyota-Display-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Toyota Display";
+  src: url("../font/toyota-display/Toyota-Display-Bold.eot");
+  src: url("../font/toyota-display/Toyota-Display-Bold.eot?iefix") format('embedded-opentype'),
+       url("../font/Toyota-Display-Bold.ttf") format("truetype"),
+       url("../font/Toyota-Display-Bold.woff") format("woff"),
+       url("../font/Toyota-Display-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

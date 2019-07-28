@@ -1,0 +1,15 @@
+.page {
+  &__container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__hero-section {
+    margin-bottom: 80px;
+  }
+
+  &__title-section {
+    text-align: center;
+  }
+}
