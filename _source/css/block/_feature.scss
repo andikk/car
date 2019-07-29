@@ -20,3 +20,19 @@
   }
 
 }
+
+@media (min-width: $tablet-width) {
+  .feature {
+    &__title {
+      font-size: 8px;
+      line-height: 15px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+
+  }
+}

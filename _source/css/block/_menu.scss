@@ -2,15 +2,13 @@
   box-shadow: 0 4px 4px -4px rgba(0,0,0,0.1);
 
   &__list {
-    display: flex;
     list-style: none;
-    justify-content: space-between;
   }
 
   &__link {
     font-family: $font_display;
     font-size: 18px;
-    line-height: 85px;
+    line-height: 38px;
     font-weight: bold;
     color: inherit;
     border: none;
@@ -24,6 +22,22 @@
       background-color: $attention_color;
       color: $secondary_color;
     }
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .menu {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      margin-right: 20px;
+    }
+
   }
 
 }

@@ -1,12 +1,17 @@
 .page {
   &__container {
-    width: 1200px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
   }
 
   &__hero-section {
     margin-bottom: 80px;
+    // background-image: url('../img/car-top-with-bg.jpg');
+    // background-repeat: no-repeat;
+    // background-size: 50%;
+    // background-position-x: 60px;
+    // background-position-y: 10px;
   }
 
   &__title-section {
@@ -17,3 +22,30 @@
     font-weight: bold;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page {
+    &__container {
+      width: 738px;
+    }
+
+    &__hero-section {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page {
+    overflow-x: hidden;
+
+    &__container {
+      width: 1200px;
+    }
+
+    &__hero-section {
+      margin-bottom: 0;
+    }
+  }
+}
+

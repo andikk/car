@@ -3,7 +3,7 @@
 
   &__list {
     list-style: none;
-    display: flex;
+    //display: flex;
     padding: 0;
   }
 
@@ -39,4 +39,14 @@
     line-height: 18px;
     font-weight: normal;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .profit {
+    &__list {
+      display: flex;
+    }
+
+  }
+
 }

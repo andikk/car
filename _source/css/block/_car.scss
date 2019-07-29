@@ -4,15 +4,17 @@
   }
 
   &__container {
-    display: flex;
+    //display: flex;
   }
 
   &__image {
     display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   &__description {
-    display: flex;
+    //display: flex;
   }
 
   &__info {
@@ -89,4 +91,33 @@
       }
     }
   }
+}
+
+@media (min-width: $tablet-width) {
+  .car {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__image {
+      align-self: self-start;
+      max-width: 30%;
+    }
+
+    &__description {
+      width: 70%;
+      display: flex;
+    }
+
+    &__info {
+
+      &_left {
+        margin-right: 0;
+      }
+    }
+
+
+  }
+
 }

@@ -1,6 +1,8 @@
 .contact {
   &__map {
-    background-image: url('../img/map.jpg');
-    min-height: 400px;
+    background-image: url('../img/map-mobile.jpg');
+    min-height: 191px;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
