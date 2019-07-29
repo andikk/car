@@ -6,3 +6,32 @@
     background-size: 100%;
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .contact {
+
+    &__map {
+      background-image: url('../img/map-tablet.jpg');
+      min-height: 301px;
+    }
+
+  }
+
+}
+
+
+
+@media (min-width: $desktop-width) {
+
+  .contact {
+
+    &__map {
+      background-image: url('../img/map.jpg');
+      min-height: 301px;
+    }
+
+  }
+
+}
+

@@ -12,6 +12,10 @@
       order: -10;
       margin-top: 42px;
     }
+
+    &_text {
+      order: 0;
+    }
   }
 
   &__image {
@@ -22,10 +26,10 @@
 
   &__title {
     background-image: url('../img/text-background.jpg');
-    background-size: 55%;
+    background-size: calc(41% + 15px);
     background-repeat: no-repeat;
     background-position-x: center;
-    font-family: "Toyota Display","Arial",sans-serif;
+    font-family: $font_display;
     font-weight: bold;
     color: #fff;
     font-size: 24px;
@@ -91,26 +95,46 @@
     padding-top: 10px;
   }
 
+  &__feature {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+
 }
 
 @media (min-width: $tablet-width) {
   .hero {
-    min-height: 650px;
+
 
     &__title {
       font-size: 20px;
       background-size: 54%;
       line-height: 70px;
+      text-align: left;
+      padding-left: 24px;
+      background-position-x: 0;
     }
 
     &__subtitle {
       font-size: 18px;
       line-height: 10px;
       margin-bottom: 20px;
+      text-align: left;
+      padding-left: 24px;
+    }
+
+    &__feature {
+      padding-left: 15px;
     }
 
     &__wrapper {
       flex-direction: row;
+    }
+
+    &__footer {
+      text-align: left;
+      padding-left: 15px;
     }
 
     &__image {
@@ -132,6 +156,10 @@
 
 @media (min-width: $desktop-width) {
   .hero {
+    &__wrapper {
+      min-height: 629px;
+    }
+
     &__image {
       max-width: 1052px;
       position: absolute;
