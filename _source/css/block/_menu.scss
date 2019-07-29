@@ -1,5 +1,5 @@
 .menu {
-  border-bottom: 1px solid red;
+  box-shadow: 0 4px 4px -4px rgba(0,0,0,0.1);
 
   &__list {
     display: flex;
@@ -13,11 +13,15 @@
     line-height: 85px;
     font-weight: bold;
     color: inherit;
+    border: none;
+    &:hover {
+      border: none;
+    }
   }
 
   &__item {
     &:hover {
-      background-color: $highlight_color;
+      background-color: $attention_color;
       color: $secondary_color;
     }
   }

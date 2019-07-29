@@ -1,4 +1,8 @@
 .car {
+  &__wrapper {
+    text-align: center;
+  }
+
   &__container {
     display: flex;
   }
@@ -19,9 +23,9 @@
   }
 
   &__link {
-    display: block;
+    display: inline-block;
     text-align: center;
-    color: $highlight_color;
+    color: $attention_color;
     font-family: $font_display;
     font-size: 16px;
     line-height: 25px;
@@ -62,7 +66,7 @@
       font-size: 24px;
       line-height: 32px;
       font-weight: bold;
-      color: $highlight_color;
+      color: $attention_color;
     }
 
     &_detail {
@@ -79,6 +83,10 @@
       line-height: 23px;
       font-weight: bold;
       color: $primary_color;
+      border: none;
+      &:hover {
+        border: none;
+      }
     }
   }
 }

@@ -1,0 +1,39 @@
+.condition {
+  background-color: $section_color;
+
+  &__button {
+    border-radius: 2px;
+    width: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    display: inline-block;
+    font-family: $font_display;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    color: $attention_color;
+
+  }
+
+  &__text {
+    font-family: $font_text;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+
+  &__link {
+    color: $primary_color;
+    border: none;
+    &:hover {
+      border: none;
+    }
+  }
+}
