@@ -79,7 +79,7 @@
 
   &__button {
     display: block;
-    width: 220px;
+    width: 245px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -98,6 +98,7 @@
       font-size: 14px;
       line-height: 23px;
       font-weight: bold;
+      text-transform: uppercase;
     }
 
     &_red {
@@ -139,13 +140,14 @@
     }
 
     &__image {
-      align-self: self-start;
-      max-width: 30%;
+      align-self: center;
+      width: 35%;
     }
 
     &__description {
       width: 70%;
       display: flex;
+      justify-content: space-between;
     }
 
     &__text {
@@ -161,10 +163,47 @@
       &_right {
         margin-top: 14px;
         padding-left: 42px;
+        margin-right: 7px;
       }
     }
-
-
   }
-
 }
+
+@media (min-width: $desktop-width) {
+  .car {
+    &__container {
+      padding-left: 34px;
+    }
+
+    &__title-section {
+      margin-bottom: 72px;
+    }
+
+    &__description {
+      margin-right: 0;
+      padding-left: 24px;
+      margin-left: 61px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      font-size: 18px;
+
+      &_bold {
+        font-size: 14px;
+      }
+
+      &_red {
+        font-size: 24px;
+      }
+
+      &_detail {
+        font-size: 16px;
+        margin-bottom: 21px;
+      }
+
+    }
+  }
+}
+
+

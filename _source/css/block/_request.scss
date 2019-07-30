@@ -50,3 +50,16 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .request {
+    &__email {
+      width: 458px;
+    }
+
+    &__button {
+      left: -27px;
+    }
+  }
+}
+

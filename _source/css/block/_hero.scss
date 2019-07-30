@@ -56,17 +56,6 @@
     text-align: center;
   }
 
-  &__icon-block {
-    position: relative;
-    padding-left: 40px;
-  }
-
-  &__icon {
-    position: absolute;
-    left: 5px;
-    top: 10px;
-  }
-
   &__link {
     display: inline-block;
     font-family: $font_display;
@@ -79,6 +68,8 @@
     color: $attention_color;
     margin-bottom: 20px;
     margin-top: 8px;
+    position: relative;
+    margin-left: 10px;
 
     &:hover {
       border-bottom-color: $secondary_color;
@@ -88,6 +79,12 @@
       color: $primary-color;
       border-bottom-style: dotted;
     }
+  }
+
+  &__icon {
+    position: absolute;
+    left: -27px;
+    top: 1px;
   }
 
   &__unique-price {
@@ -155,6 +152,7 @@
       margin-bottom: 10px;
       margin-top: 0;
       font-size: 14px;
+      margin-left: 26px;
     }
 
     &__link-container {
@@ -167,7 +165,6 @@
     }
 
     &__image {
-      //max-width: 100%;
       margin-left: 0;
       margin-top: -39px;
     }
@@ -177,7 +174,6 @@
 
       &_image {
         width: 60%;
-       // margin-top: 34px;
         order: 1;
       }
     }
@@ -189,6 +185,7 @@
     &__wrapper {
       min-height: 703px;
     }
+
 
     &__image {
       max-width: 1052px;
@@ -247,9 +244,6 @@
       margin-top: -25px;
       padding-left: 0;
     }
-
-
-
 
   }
 

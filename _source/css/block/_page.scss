@@ -21,7 +21,7 @@
   &__title-section {
     text-align: center;
     font-family: $font_display;
-    font-size: 32px;
+    font-size: 23px;
     line-height: 45px;
     font-weight: bold;
     position: relative;
@@ -49,6 +49,12 @@
     &__hero-section {
       margin-bottom: 0;
     }
+
+    &__title-section {
+      font-size: 30px;
+    }
+
+
   }
 }
 
@@ -60,9 +66,20 @@
       width: 1200px;
     }
 
-    &__hero-section {
-      margin-bottom: 0;
+    &__profit-section {
+      margin-bottom: 97px;
     }
+
+    &__car-section {
+      margin-bottom: 67px;
+    }
+
+    &__title-section {
+      font-size: 32px;
+    }
+
+
+
   }
 }
 
