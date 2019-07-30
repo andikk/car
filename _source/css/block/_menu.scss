@@ -1,4 +1,4 @@
-.menu {
+.js-menu {
   box-shadow: 0 4px 4px -4px rgba(0,0,0,0.1);
 
   &__wrapper {
@@ -53,11 +53,11 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .menu_closed .menu__list {
+  .js-menu_closed .js-menu__list {
     display: none;
   }
 
-  .menu_closed .menu__button::before {
+  .js-menu_closed .js-menu__button::before {
     content: "";
     position: absolute;
     top: 17px;
@@ -69,11 +69,11 @@
     z-index: 40;
   }
 
-  .menu_opened .menu__list {
+  .js-menu_opened .js-menu__list {
     display: block;
   }
 
-  .menu_opened .menu__button {
+  .js-menu_opened .js-menu__button {
     &::before,
     &::after {
       content: "";
@@ -98,7 +98,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .menu {
+  .js-menu {
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -120,7 +120,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .menu {
+  .js-menu {
 
     &__item {
       width: 111px;

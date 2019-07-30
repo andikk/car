@@ -8,7 +8,7 @@
   &__text {
     text-align: center;
     font-family: $font_text;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 32px;
     font-weight: normal;
   }
@@ -17,8 +17,24 @@
 
 @media (min-width: $desktop-width) {
   .offer {
+    &__text {
+      font-size: 20px;
+    }
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer {
     &__title-section {
       margin-top: 4px;
     }
+
+    &__text {
+      font-size: 24px;
+    }
+
   }
 }
+
+

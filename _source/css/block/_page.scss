@@ -1,4 +1,7 @@
 .page {
+
+  position: relative;
+
   &__container {
     width: 100%;
     margin-left: auto;
@@ -20,7 +23,7 @@
   &__title-section {
     text-align: center;
     font-family: $font_display;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 45px;
     font-weight: bold;
     position: relative;
@@ -37,6 +40,18 @@
       background-color: $attention-color;
     }
   }
+
+  &__fade {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -47,7 +62,7 @@
     }
 
     &__title-section {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
 }
