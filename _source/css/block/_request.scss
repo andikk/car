@@ -6,11 +6,47 @@
     border: none;
   }
 
-  &__email::placeholder {
+  &__email {
+
+    border-radius: 40px;
+    display: block;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: $font_display;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: normal;
+  }
+
+  &::placeholder {
     font-family: $font_display;
     font-size: 16px;
     line-height: 32px;
     font-weight: normal;
     opacity: 0.7;
+
+
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .request {
+    &__email {
+      display: inline-block;
+      width: 345px;
+      position: relative;
+      left: 39px;
+    }
+
+    &__button {
+      z-index: 2;
+      position: relative;
+    }
   }
 }
