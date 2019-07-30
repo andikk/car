@@ -19,9 +19,9 @@
   }
 
   &__image {
-    max-width: 97%;
+    max-width: 100%;
     height: auto;
-    margin-left: 10px;
+    padding-left: 10px;
   }
 
   &__title {
@@ -56,6 +56,17 @@
     text-align: center;
   }
 
+  &__icon-block {
+    position: relative;
+    padding-left: 40px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+  }
+
   &__link {
     display: inline-block;
     font-family: $font_display;
@@ -80,10 +91,10 @@
   }
 
   &__unique-price {
-    background-image: url('../img/unique-background.jpg');
+    background-image: url('../img/spec-bg.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    font-family: "Toyota Text","Arial",sans-serif;
+    font-family: $font_text;
     font-size: 12px;
     line-height: 12px;
     font-weight: bold;
@@ -110,8 +121,10 @@
   .hero {
 
     &__unique-price {
-      left: 114px;
-      top: -26px;
+      left: 93px;
+      top: -47px;
+      left: 113px;
+      top: 0px;
     }
 
     &__title {
@@ -154,8 +167,9 @@
     }
 
     &__image {
-      max-width: 100%;
+      //max-width: 100%;
       margin-left: 0;
+      margin-top: -39px;
     }
 
     &__block {
@@ -163,7 +177,7 @@
 
       &_image {
         width: 60%;
-        margin-top: 34px;
+       // margin-top: 34px;
         order: 1;
       }
     }
@@ -173,15 +187,70 @@
 @media (min-width: $desktop-width) {
   .hero {
     &__wrapper {
-      min-height: 629px;
+      min-height: 703px;
     }
 
     &__image {
       max-width: 1052px;
       position: absolute;
-      top: 0;
-      left: 42px;
+      top: -25px;
+      left: 28px;
+      z-index: -1;
     }
+
+    &__block {
+      &_text {
+        padding-top: 44px;
+        padding-left: 27px;
+      }
+
+    }
+
+    &__title {
+      font-size: 32px;
+      height: 97px;
+      width: 231px;
+      padding-top: 24px;
+      margin-bottom: 17px;
+      padding-left: 32px;
+      margin-left: -28px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+      padding-left: 0;
+      margin-bottom: 73px;
+    }
+
+    &__link {
+      margin-bottom: 20px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    &__unique-price {
+      left: 387px;
+      top: 22px;
+      width: 333px;
+      font-size: 18px;
+      padding-left: 51px;
+      padding-top: 15px;
+      line-height: 24px;
+    }
+
+    &__feature {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__footer {
+      margin-top: -25px;
+      padding-left: 0;
+    }
+
+
+
+
   }
 
 }

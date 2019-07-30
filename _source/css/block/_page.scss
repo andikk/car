@@ -24,6 +24,19 @@
     font-size: 32px;
     line-height: 45px;
     font-weight: bold;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 30;
+      width: 80px;
+      height: 2px;
+      background-color: $attention-color;
+    }
   }
 }
 

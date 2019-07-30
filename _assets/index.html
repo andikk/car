@@ -51,7 +51,7 @@
     </nav>
 
     <section class="hero page__hero-section">
-      <div class="hero__wrapper">
+      <div class="hero__wrapper page__container">
         <div class="hero__block hero__block_text">
           <h1 class="hero__title">Fortuner</h1>
           <p class="hero__subtitle">Ты настоящий</p>
@@ -85,8 +85,8 @@
           </table>
 
           <div class="hero__footer">
-            <div>
-              <span>
+            <div class="hero__icon-block">
+              <span class="hero__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
                   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
                   <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
@@ -109,7 +109,10 @@
 
         <div class="hero__block hero__block_image">
           <p class="hero__unique-price">Специальная цена <br> от официального дилера</p>
-          <img class="hero__image" src="img/car-top-with-bg.jpg" alt="Fortuner">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/car-top-with-bg1.jpg">
+            <source media="(min-width: 768px)" srcset="img/car-top-with-bg-tablet.jpg">
+            <img class="hero__image" src="img/car-top-with-bg.jpg" alt="Fortuner">
           </picture>
         </div>
 
