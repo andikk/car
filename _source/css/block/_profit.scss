@@ -21,7 +21,6 @@
       & .profit__number {
         opacity: 1;
       }
-
     }
   }
 
@@ -60,7 +59,6 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .profit {
     &__list {
@@ -87,14 +85,5 @@
       display: inline-block;
       margin-bottom: 29px;
     }
-
-  }
-
-}
-
-@media (min-width: $desktop-width) {
-  .profit {
-
-
   }
 }

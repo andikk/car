@@ -17,7 +17,6 @@
     padding-top: 30px;
   }
 
-
   &__title-section {
     text-align: center;
     font-family: $font_display;
@@ -42,9 +41,6 @@
 
 @media (min-width: $tablet-width) {
   .page {
-    &__container {
-      //width: 738px;
-    }
 
     &__hero-section {
       margin-bottom: 0;
@@ -53,8 +49,6 @@
     &__title-section {
       font-size: 30px;
     }
-
-
   }
 }
 
@@ -77,9 +71,5 @@
     &__title-section {
       font-size: 32px;
     }
-
-
-
   }
 }
-

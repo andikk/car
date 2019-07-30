@@ -15,17 +15,12 @@
       background-image: url('../img/map-tablet.jpg');
       min-height: 301px;
     }
-
   }
-
 }
-
-
 
 @media (min-width: $desktop-width) {
 
   .contact {
-
     &__map {
       background-image: url('../img/map.jpg');
       min-height: 400px;
@@ -35,8 +30,5 @@
       margin-top: 82px;
       margin-bottom: 67px;
     }
-
   }
-
 }
-

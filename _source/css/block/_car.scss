@@ -17,13 +17,6 @@
     padding-left: 10px;
   }
 
-  &__info {
-
-    &_left {
-
-    }
-  }
-
   &__link {
     display: inline-block;
     text-align: center;
@@ -156,10 +149,6 @@
 
     &__info {
 
-      &_left {
-       // margin-right: 52px;
-      }
-
       &_right {
         margin-top: 14px;
         padding-left: 42px;
@@ -205,5 +194,3 @@
     }
   }
 }
-
-

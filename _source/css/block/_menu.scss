@@ -50,9 +50,7 @@
       color: $secondary_color;
     }
   }
-
 }
-
 
 @media (max-width: $mobile-width-only) {
   .menu_closed .menu__list {
@@ -97,7 +95,6 @@
       transform: rotate(-45deg);
     }
   }
-
 }
 
 @media (min-width: $tablet-width) {
@@ -113,16 +110,13 @@
       background-color: $secondary_color;
       box-shadow: none;
       padding-top: 38px;
-
     }
 
     &__wrapper {
       padding-left: 10px;
       padding-right: 10px;
     }
-
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -132,10 +126,5 @@
       width: 111px;
       padding-top: 38px;
     }
-
-
   }
 }
-
-
-
