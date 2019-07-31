@@ -11,46 +11,46 @@
   <svg style="display:none">
     <symbol id="icon" viewBox="0 0 24 24"><image width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABEVBMVEXlAAD////lAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAADlAAAAAAAGFix9AAAAWXRSTlMAACmCw+8os2b4+qlYIAgfqISuHa39c3Jxr7Ae+6oDTWBcSL3MMBAta/DjnyISRe3OWvTgdt7q6+WDxworVldCJlWn8aaibZfCpKCl0F65Z8uaAdKQVAkhuMfQPpEAAAABYktHRFoDu6WiAAAACXBIWXMAABcRAAAXEQHKJvM/AAAAB3RJTUUH4wceCiAPVk6D1QAAAT5JREFUKM+FkulWwjAQhSdtulpBQERAq6i4gQoIKLiAIO6Ku973fxHTBCJ6PMf7ayZfO8m9CZGSYXILsLhpMCW1bDvQcuxv4Hrwp4LpWCwezPjw3DFIAMnUaCSlZoGEAi7Sc6TFWAZwI2B7yNAkYPPwbAEcZOknYDk4jAz4+d8gvwCDTCzKhdBeWi6sxCVgqzCJY624vrGZ3VIutkuF8s7uHjhZ2hkPAq4bi3RZqdZq1YpuBdivyareABp1WTYPBLBQzh9GXasNtFty5tGxGMVxQqfys04y2WmKIt1lZ2JzEz0K5S/9Uqkv42XsXBxXGhxgQhcs5QuDIpIcXQL+1eD65vZOgPvQiSKJQnzowy+qRIbiaI8qRBG70NMoqueXqHP1ReF1DCLzifHVDj2g9xYP3z+qn4A3/P8x/PV8vgBWIlXKVna10AAAAABJRU5ErkJggg=="/></symbol>
   </svg>
-  <header class="page__header">
+  <header class="page__header" id="header">
 
-    <nav class="js-menu js-menu_closed">
-      <div class="js-menu__wrapper">
-        <ul class="js-menu__list">
-          <li class="js-menu__item">
-            <a class="js-menu__link" href="#">Corolla</a>
+    <nav class="menu js-menu js-menu_closed">
+      <div class="menu__wrapper">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Corolla</a>
           </li>
-          <li class="js-menu__item">
-            <a class="js-menu__link" href="#">Camry</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Camry</a>
           </li>
-          <li class="js-menu__item">
-            <a class="js-menu__link" href="#">RAV4</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">RAV4</a>
           </li>
-          <li class="js-menu__item">
-            <a class="js-menu__link" href="#">Highlander</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Highlander</a>
           </li>
-          <li class="js-menu__item">
-            <a class="js-menu__link" href="#">Land Cruiser Prado</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Land Cruiser Prado</a>
           </li>
-          <li class="js-menu__item">
-            <a class="js-menu__link" href="#">Land Cruiser 200</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Land Cruiser 200</a>
           </li>
-          <li class="js-menu__item">
-            <a class="js-menu__link" href="#">Hilux</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Hilux</a>
           </li>
-          <li class="js-menu__item">
-            <a class="js-menu__link" href="#">Fortuner</a>
+          <li class="menu__item menu__item_active">
+            <a class="menu__link" href="#">Fortuner</a>
           </li>
-          <li class="js-menu__item">
-            <a class="js-menu__link" href="#">Prius</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Prius</a>
           </li>
         </ul>
-        <button class="js-menu__button" type="button"><span class="visually-hidden">Меню</span></button>
+        <button class="menu__button js-menu__button" type="button"><span class="visually-hidden">Меню</span></button>
       </div>
     </nav>
 
     <section class="hero page__hero-section">
       <div class="hero__wrapper page__container">
-        <div class="hero__block hero__block_text">
+        <div class="hero__block hero__block_text" id="conditions">
           <h1 class="hero__title">Fortuner</h1>
           <p class="hero__subtitle">Ты настоящий</p>
           <table class="feature hero__feature">
@@ -88,7 +88,7 @@
                 <use xlink:href="#icon"></use>
               </svg>
             </span>Записаться на Тест-драйв</a>
-            <div><button class="button hero__button js-hero__button">Получить предложение</button></div>
+            <button class="button hero__button js-hero__button">Получить предложение</button>
             <div class="hero__link-container"><a class="hero__link hero__link_cheaper" href="#">Нашли дешевле?</a></div>
           </div>
         </div>
@@ -123,7 +123,7 @@
         <li class="profit__item">
           <p class="profit__number">03</p>
           <p class="profit__title">Бронь а/м <br> из поставки</p>
-          <p class="profit__text">Бронируйте лучшие а/м <br> еще до поступления в салон.<br>
+          <p class="profit__text">Бронируйте лучшие а/м еще до поступления в салон.<br>
           Пока вы думаете - другие покупают.</p>
         </li>
         <li class="profit__item">
@@ -183,8 +183,8 @@
 
     <section class="condition page__condition-section">
       <div class="condition__wrapper page__container">
-        <button class="button condition__button"></button>
-        <p class="condition__title">Условия акции</p>
+        <a href="#header" class="button condition__button"></a>
+        <a href="#conditions" class="condition__title">Условия акции</a>
         <p class="condition__text">*Предложение действует до 31.03.18г.</p>
         <p class="condition__text">Выгода достигается посредством предоставления скидки от максимальной цены перепродажи автомобиля при передаче автомобиля с пробегом в счет стоимости нового автомобиля, а также скидки при приобретении автомобиля по всем кредитным программам от АО «Тойота Банк», а так же одновременном страховании по договору КАСКО в рамках программы Тойота Страхование, организатором которой является ООО «Тойота Иншуранс Менеджмент (Страховые брокеры)» (Лицензия ЦБ РФ СБ№4339) и скидки дилера зависящей от комплектации выбранной модели, подарками дополнительным оборудованием, или специальной ценой. Подробнее в дилерском центре по тел. – +7(351)2111010"</p>
         <p class="condition__text">** Кредит 5,5%: Ставка указана по кредитной программе «Выгодный (новые автомобили) 02_18» при первоначальном взносе (ПВ) от 70% и сроке кредита (СК) 12 мес. Условия кредитования: годовая процентная ставка при ПВ от 70% и СК 12 мес. – 5,5% годовых, при СК от 13 до 24 мес. – 7,5% годовых, при СК от 25 до 36 мес. – 9,5% годовых; при ПВ от 40 до 69,9% и СК 12 мес. – 5,5% годовых, при СК от 13 до 24 мес. – 8,5% годовых, при СК от 25 до 36 мес. – 9,9% годовых. Валюта кредита – рубли РФ. Минимальная сумма кредита – 300 000 руб. Погашение аннуитетными (равными по сумме ежемесячными) платежами. Обязательная передача приобретаемого с использованием кредита а/м в залог и страхование по программе КАСКО. Кредитование осуществляется АО «Тойота Банк» в регионах присутствия АО «Тойота Банк». Лицензии Банка России №3470. Подробнее на сайте <a class="condition__link" href="http://toyota-bank.ru">www.toyota-bank.ru</a> или по тел. <a class="condition__link" href="tel:+78002000840">8 800 200 08 40</a>. Предложение действует с 01.02.2018.
@@ -213,9 +213,10 @@
           </div>
         </fieldset>
         <button class="button modal__button" type="submit" name="submit" tabindex="0">Заказать оценку</button>
-        <input class="modal__checkbox visually-hidden" type="checkbox" required name="agreement" id="agree">
-        <label for="agree" class="modal__label">Я согласен с </label><a class="modal__link" href="#">условиями обработки персональных данных</a>
-
+        <div class="modal__agreement-wrapper">
+          <input class="modal__checkbox visually-hidden" type="checkbox" required name="agreement" id="agree">
+          <label for="agree" class="modal__label">Я согласен с </label><a class="modal__link" href="#">условиями обработки персональных данных</a>
+        </div>
 
       </form>
     </div>
