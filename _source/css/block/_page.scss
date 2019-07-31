@@ -41,7 +41,7 @@
     }
   }
 
-  &__fade {
+  &__fade::before {
     position: absolute;
     content: "";
     top: 0;
