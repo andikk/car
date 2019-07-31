@@ -1,11 +1,12 @@
 .modal {
+  display: none;
+  //display: flex;
   position: absolute;
   top: 5%;
   left: 50%;
   width: 90%;
   z-index: 100;
   transform: translateX(-50%);
-  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $secondary_color;
@@ -15,7 +16,6 @@
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
-
 
   &__close {
     position: absolute;
@@ -50,7 +50,7 @@
   &__title {
     position: relative;
     font-family: $font_display;
-    font-size: 18px; //24
+    font-size: 18px;
     line-height: 20px;
     text-align: center;
     display: flex;
@@ -100,14 +100,6 @@
       color:#979797;
     }
 
-    &_client-name {
-
-    }
-
-    &_tel {
-
-    }
-
     &_car {
       display: block;
       width: 65%;
@@ -120,9 +112,33 @@
 
   }
 
-  &__label, &__link {
+  &__link {
     font-size: 12px;
     margin-bottom: 40px;
+  }
+
+  &__label {
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -16px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/icon-checkbox-empty.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__checkbox:checked + &__label::before {
+    background-image: url("../img/icon-checkbox-checked.svg");
   }
 
   &__button {
@@ -156,7 +172,7 @@
 @media (min-width: $desktop-width) {
 
   .modal {
-    width: 25%;
+    width: 27%;
 
     &__title {
       font-size: 24px;

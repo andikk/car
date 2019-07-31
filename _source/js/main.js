@@ -13,5 +13,24 @@ $(document).ready(function() {
     }
   });
 
+  var ctaBtn = document.querySelector('.js-hero__button');
+  var modal = document.querySelector('.js-modal');
+  var page = document.querySelector('.js-page');
+
+
+  ctaBtn.addEventListener('click', function() {
+    modal.style = 'display: flex;'
+    page.classList.add('page__fade');
+  });
+
+  var btnModalClose = document.querySelector('.modal__close');
+  btnModalClose.addEventListener('click', function() {
+    page.classList.remove('page__fade');
+    modal.style = 'display: none;'
+  });
+
+
+
+
 
 });
