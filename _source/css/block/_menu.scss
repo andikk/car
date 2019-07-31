@@ -1,4 +1,4 @@
-.js-menu {
+.menu {
   box-shadow: 0 4px 4px -4px rgba(0,0,0,0.1);
 
   &__wrapper {
@@ -44,24 +44,31 @@
     background-color: $section_color;
     box-shadow: inset 0 4px 4px -4px rgba(93, 32, 32, 0.1);
     padding-bottom: 4px;
+    padding-top: 4px;
 
     &:hover {
       background-color: $attention_color;
       color: $secondary_color;
     }
+    &_active {
+      background-color: $attention_color;
+      color: $secondary_color;
+    }
   }
+
+
 }
 
 @media (max-width: $mobile-width-only) {
-  .js-menu_closed .js-menu__list {
+  .js-menu_closed .menu__list {
     display: none;
   }
 
-  .js-menu_closed .js-menu__button::before {
-    content: "";
+  .js-menu_closed .menu__button::before {
+    content: '';
     position: absolute;
-    top: 17px;
-    left: 5px;
+    top: 11px;
+    left: 16px;
     width: 23px;
     height: 3px;
     background-color: $primary-color;
@@ -69,17 +76,17 @@
     z-index: 40;
   }
 
-  .js-menu_opened .js-menu__list {
+  .js-menu_opened .menu__list {
     display: block;
   }
 
-  .js-menu_opened .js-menu__button {
+  .js-menu_opened .menu__button {
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
-      top: 26px;
-      left: 5px;
+      top: 16px;
+      left: 20px;;
       z-index: 30;
       width: 23px;
       height: 3px;
@@ -98,7 +105,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .js-menu {
+  .menu {
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -109,7 +116,11 @@
       margin-right: 20px;
       background-color: $secondary_color;
       box-shadow: none;
-      padding-top: 38px;
+
+      &_active {
+        background-color: $attention_color;
+        color: $secondary_color;
+      }
     }
 
     &__wrapper {
@@ -120,7 +131,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .js-menu {
+  .menu {
 
     &__item {
       width: 111px;

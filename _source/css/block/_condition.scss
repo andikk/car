@@ -48,6 +48,10 @@
     font-weight: bold;
     color: $attention_color;
     position: relative;
+    border: none;
+    &:hover {
+      border: none;
+    }
 
     &::before,
     &::after {
@@ -88,6 +92,18 @@
     border: none;
     &:hover {
       border: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .condition {
+    &__button {
+      margin-bottom: 57px;
+    }
+
+    &__title {
+      margin-bottom: 14px;
     }
   }
 }

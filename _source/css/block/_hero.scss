@@ -66,9 +66,7 @@
     font-size: 16px;
     line-height: 23px;
     font-weight: normal;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: $attention_color;
+    border-bottom: 3px solid $attention_color;
     color: $attention_color;
     margin-bottom: 20px;
     margin-top: 8px;
@@ -83,6 +81,12 @@
       color: $primary-color;
       border-bottom-style: dotted;
     }
+  }
+
+  &__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__icon {
@@ -117,6 +121,8 @@
     height: 50%;
   }
 
+
+
 }
 
 @media (min-width: $tablet-width) {
@@ -140,7 +146,7 @@
     &__subtitle {
       font-size: 18px;
       line-height: 10px;
-      margin-bottom: auto;
+      margin-bottom: 16px; //auto
       text-align: left;
       padding-left: 24px;
     }
@@ -163,6 +169,13 @@
 
     &__link-container {
       margin-left: 118px;
+    }
+
+    &__button {
+      margin-right: auto;
+      margin-left: 0;
+      margin-bottom: 7px;
+      margin-top: 10px;
     }
 
     &__footer {
@@ -221,13 +234,17 @@
     &__subtitle {
       font-size: 24px;
       padding-left: 0;
-      margin-bottom: 73px;
+      margin-bottom: 26px;
     }
 
     &__link {
-      margin-bottom: 20px;
-      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-top: 22px;
       font-size: 16px;
+
+      &_cheaper {
+        margin-top: 0;
+      }
     }
 
     &__unique-price {
@@ -244,6 +261,8 @@
       padding-left: 0;
       padding-right: 0;
     }
+
+
 
     &__footer {
       margin-top: -25px;

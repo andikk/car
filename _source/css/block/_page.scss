@@ -23,13 +23,13 @@
   &__title-section {
     text-align: center;
     font-family: $font_display;
-    font-size: 18px;
+    font-size: 20px;  //18
     line-height: 45px;
     font-weight: bold;
     position: relative;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 50px;
       left: 50%;
@@ -43,7 +43,7 @@
 
   &__fade::before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     left: 0;
     width: 100%;
@@ -56,14 +56,14 @@
 
 @media (min-width: $tablet-width) {
   .page {
-
     &__hero-section {
-      margin-bottom: 0;
+      margin-bottom: 68px;
     }
 
     &__title-section {
-      font-size: 20px;
+      font-size: 24px;
     }
+
   }
 }
 
@@ -81,6 +81,10 @@
 
     &__car-section {
       margin-bottom: 67px;
+    }
+
+    &__hero-section {
+      margin-bottom: -5px;
     }
 
     &__title-section {

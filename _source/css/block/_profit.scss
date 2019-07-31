@@ -1,7 +1,5 @@
 .profit {
   background-color: $primary_color;
-  padding-left: 10px;
-  padding-right: 10px;
 
   &__list {
     list-style: none;
@@ -10,11 +8,10 @@
   }
 
   &__item {
-    margin-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color: $secondary_color;
     &:hover {
       background-color: $attention_color;
@@ -42,6 +39,7 @@
     font-weight: bold;
     display: inline-block;
     text-transform: uppercase;
+    padding-left: 4px;
   }
 
   &__title {
@@ -87,3 +85,15 @@
     }
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .profit {
+    &__item {
+      padding-bottom: 18px;
+      padding-top: 16px;
+    }
+  }
+}
+
+

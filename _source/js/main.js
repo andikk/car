@@ -1,36 +1,23 @@
 $(document).ready(function() {
 
-  var navMain = document.querySelector('.js-menu');
-  var navToggle = document.querySelector('.js-menu__button');
-
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('js-menu_closed')) {
-      navMain.classList.remove('js-menu_closed');
-      navMain.classList.add('js-menu_opened');
+  $('.js-menu__button').on('click', function () {
+    if ($('.js-menu').hasClass('js-menu_closed')) {
+      $('.js-menu').removeClass('js-menu_closed');
+      $('.js-menu').addClass('js-menu_opened');
     } else {
-      navMain.classList.add('js-menu_closed');
-      navMain.classList.remove('js-menu_opened');
+      $('.js-menu').addClass('js-menu_closed');
+      $('.js-menu').removeClass('js-menu_opened');
     }
   });
 
-  var ctaBtn = document.querySelector('.js-hero__button');
-  var modal = document.querySelector('.js-modal');
-  var page = document.querySelector('.js-page');
-
-
-  ctaBtn.addEventListener('click', function() {
-    modal.style = 'display: flex;'
-    page.classList.add('page__fade');
+  $('.js-hero__button').on('click', function () {
+    $('.js-modal').css('display', 'flex');
+    $('.js-page').addClass('page__fade');
   });
 
-  var btnModalClose = document.querySelector('.modal__close');
-  btnModalClose.addEventListener('click', function() {
-    page.classList.remove('page__fade');
-    modal.style = 'display: none;'
+  $('.modal__close').on('click', function () {
+    $('.js-page').removeClass('page__fade');
+    $('.js-modal').css('display', 'none')
   });
-
-
-
-
 
 });
