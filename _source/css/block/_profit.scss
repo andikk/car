@@ -24,24 +24,24 @@
   }
 
   &__number {
+    display: inline-block;
     font-family: $font_display;
     font-size: 50px;
     line-height: 0px;
     font-weight: bold;
-    display: inline-block;
     margin-top: 15px;
     margin-bottom: 10px;
     opacity: 0.2;
   }
 
   &__title {
+    display: inline-block;
+    padding-left: 4px;
     font-family: $font_display;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
-    display: inline-block;
     text-transform: uppercase;
-    padding-left: 4px;
   }
 
   &__title {
@@ -50,12 +50,12 @@
   }
 
   &__text {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-family: $font_text;
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 10px;
   }
 }
 
@@ -70,16 +70,14 @@
     }
 
     &__item {
-      margin-bottom: 0;
-      padding-left: 10px;
-      padding-right: 10px;
-      border-left: 1px solid $border_color;
-      border-right: 1px solid $border_color;
-      border-bottom: none;
       width: 25%;
+      margin-bottom: 0;
       padding-left: 22px;
       padding-right: 22px;
       padding-bottom: 11px;
+      border-left: 1px solid $border_color;
+      border-right: 1px solid $border_color;
+      border-bottom: none;
     }
 
     &__number {
@@ -98,5 +96,3 @@
     }
   }
 }
-
-

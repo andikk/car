@@ -21,23 +21,23 @@
   }
 
   &__title-section {
+    position: relative;
     text-align: center;
     font-family: $font_display;
     font-size: 20px;
     line-height: 45px;
     font-weight: bold;
-    position: relative;
 
     &::before {
       content: '';
       position: absolute;
       top: 50px;
       left: 50%;
-      transform: translateX(-50%);
       z-index: 30;
       width: 80px;
       height: 2px;
       background-color: $attention-color;
+      transform: translateX(-50%);
     }
   }
 
@@ -66,14 +66,12 @@
     &__title-section {
       font-size: 24px;
     }
-
   }
 }
 
 @media (min-width: $desktop-width) {
   .page {
     overflow-x: hidden;
-
 
     &__container {
       width: 1200px;

@@ -1,25 +1,26 @@
 .condition {
-  background-color: $section_color;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 26px;
+  background-color: $section_color;
 
   &__button {
-    border-radius: 2px;
+    position: relative;
+    display: block;
+
     width: 48px;
     height: 48px;
     padding-left: 0;
     padding-right: 0;
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     margin-bottom: 30px;
     margin-top: 10px;
+    border-radius: 2px;
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 21px;
       z-index: 30;
@@ -29,25 +30,25 @@
     }
 
     &::before {
+      left: 20px;
       transform: rotate(45deg);
       box-shadow: none;
-      left: 20px;
     }
 
     &::after {
-      transform: rotate(-45deg);
       left: 10px;
+      transform: rotate(-45deg);
     }
   }
 
   &__title {
+    position: relative;
     display: inline-block;
     font-family: $font_display;
     font-size: 18px;
     line-height: 27px;
     font-weight: bold;
     color: $attention_color;
-    position: relative;
     border: none;
     &:hover {
       border: none;
@@ -55,7 +56,7 @@
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 12px;
       z-index: 30;
@@ -78,13 +79,13 @@
   }
 
   &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 13px;
     font-family: $font_text;
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 13px;
   }
 
   &__link {

@@ -10,15 +10,15 @@
 
     &_image {
       position: relative;
-      order: -10;
       margin-top: 42px;
+      order: -10;
     }
 
     &_text {
-      order: 0;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      order: 0;
     }
   }
 
@@ -29,6 +29,8 @@
   }
 
   &__title {
+    margin-left: auto;
+    margin-right: auto;
     width: 172px;
     height: 69px;
     background-image: url('../img/text-background.jpg');
@@ -40,20 +42,17 @@
     color: #fff;
     font-size: 24px;
     line-height: 71px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
   }
 
   &__subtitle {
+    margin-top: -11px;
+    margin-bottom: 10px;
     font-family: $font_text;
     font-size: 16px;
     line-height: 23px;
     font-weight: normal;
-    margin-top: -11px;
-    margin-bottom: -3px;
     text-align: center;
-    margin-bottom: 10px;
   }
 
   &__footer {
@@ -68,16 +67,16 @@
       border-bottom-style: dotted;
     }
 
+    position: relative;
     display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-left: 10px;
     font-family: $font_display;
     font-size: 16px;
     line-height: 23px;
     font-weight: normal;
     color: $attention_color;
-    margin-bottom: 20px;
-    margin-top: 8px;
-    position: relative;
-    margin-left: 10px;
     border-bottom: 1px solid $attention_color;
 
     &:hover {
@@ -94,9 +93,8 @@
     }
 
     &:visited {
-      color: #8a1f1f;
+      color: $visited_color;
     }
-
   }
 
   &__button {
@@ -112,14 +110,6 @@
   }
 
   &__unique-price {
-    background-image: url('../img/spec-bg.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    font-family: $font_text;
-    font-size: 12px;
-    line-height: 12px;
-    font-weight: bold;
-    color: #fff;
     position: absolute;
     left: 21px;
     top: -46px;
@@ -128,6 +118,14 @@
     z-index: 1;
     padding-left: 30px;
     padding-top: 10px;
+    font-family: $font_text;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    background-image: url('../img/spec-bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #fff;
   }
 
   &__feature {
@@ -136,9 +134,6 @@
     width: 100%;
     height: 50%;
   }
-
-
-
 }
 
 @media (min-width: $tablet-width) {
@@ -152,19 +147,19 @@
     }
 
     &__title {
+      padding-left: 24px;
+      margin-left: 0;
       font-size: 26px;
       line-height: 70px;
       text-align: left;
-      padding-left: 24px;
-      margin-left: 0;
     }
 
     &__subtitle {
-      font-size: 18px;
-      line-height: 10px;
-      margin-bottom: 16px; //auto
+      margin-bottom: 16px;
       text-align: left;
       padding-left: 24px;
+      font-size: 18px;
+      line-height: 10px;
     }
 
     &__feature {
@@ -179,8 +174,8 @@
     &__link {
       margin-bottom: 10px;
       margin-top: 0;
-      font-size: 14px;
       margin-left: 26px;
+      font-size: 14px;
     }
 
     &__link-container {
@@ -238,13 +233,13 @@
     }
 
     &__title {
-      font-size: 32px;
-      height: 97px;
-      width: 231px;
       padding-top: 24px;
       margin-bottom: 17px;
       padding-left: 32px;
       margin-left: -28px;
+      font-size: 32px;
+      height: 97px;
+      width: 231px;
     }
 
     &__subtitle {
@@ -268,17 +263,15 @@
       top: 22px;
       width: 333px;
       font-size: 18px;
+      line-height: 24px;
       padding-left: 51px;
       padding-top: 15px;
-      line-height: 24px;
     }
 
     &__feature {
       padding-left: 0;
       padding-right: 0;
     }
-
-
 
     &__footer {
       margin-top: -25px;

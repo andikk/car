@@ -7,10 +7,6 @@
   }
 
   &__tel {
-    border-radius: 40px;
-    border-width: 1px;
-    border-style: none;
-    box-shadow: 0px 1px 3.2px 0.8px rgba(0, 0, 0, 0.1);
     display: block;
     width: 245px;
     margin-left: auto;
@@ -24,14 +20,16 @@
     font-size: 16px;
     line-height: 32px;
     font-weight: normal;
+    border-radius: 40px;
+    border-width: 1px;
+    border-style: none;
+    box-shadow: 0px 1px 3.2px 0.8px rgba(0, 0, 0, 0.1);
 
     &:hover, &:active, &:focus {
       box-shadow: 0px 2px 16.2px 2.8px rgba(0,0,0,0.1);
       outline: none;
     }
-
   }
-
 }
 
 @media (min-width: $tablet-width) {
