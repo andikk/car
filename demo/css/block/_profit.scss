@@ -1,0 +1,99 @@
+.profit {
+  background-color: $primary_color;
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__item {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: $secondary_color;
+    &:hover {
+      background-color: $attention_color;
+      & .profit__number {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__number {
+    font-family: $font_display;
+    font-size: 50px;
+    line-height: 0px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    opacity: 0.2;
+  }
+
+  &__title {
+    font-family: $font_display;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 4px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: $font_text;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .profit {
+    &__list {
+      display: flex;
+    }
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    &__item {
+      margin-bottom: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-left: 1px solid $border_color;
+      border-right: 1px solid $border_color;
+      width: 25%;
+      padding-left: 22px;
+      padding-right: 22px;
+      padding-bottom: 11px;
+    }
+
+    &__number {
+      display: inline-block;
+      margin-bottom: 29px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .profit {
+    &__item {
+      padding-bottom: 18px;
+      padding-top: 16px;
+    }
+  }
+}
+
+

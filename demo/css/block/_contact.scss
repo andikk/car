@@ -1,0 +1,35 @@
+.contact {
+  &__map {
+    background-image: url('../img/map-mobile.jpg');
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .contact {
+
+    &__map {
+      background-image: url('../img/map-tablet.jpg');
+      min-height: 301px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .contact {
+    &__map {
+      background-image: url('../img/map.jpg');
+      min-height: 396px;
+    }
+
+    &__title-section {
+      margin-top: 82px;
+      margin-bottom: 67px;
+    }
+  }
+}

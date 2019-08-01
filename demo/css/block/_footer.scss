@@ -1,0 +1,16 @@
+.footer {
+  background-color: #dadada;
+  padding-left: 10px;
+  padding-right: 10px;
+  &__text {
+    font-family: $font_text;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 32px;
+    opacity: 0.5;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
