@@ -12,7 +12,6 @@ var gulp = require('gulp'),
     cheerio = require('gulp-cheerio'),
     svgsprite = require('gulp-svg-sprite'),
     concat = require('gulp-concat'),
-    server = require("browser-sync").create(),
     pump = require('pump')
 
 var path = {
@@ -207,21 +206,6 @@ gulp.task('watch', function () {
   watch([path.src.module], function () {
     gulp.start('module:build');
   });
-});
-
-gulp.task("serve", function () {
-server.init({
-server: "_assets/",
-notify: false,
-open: true,
-cors: true,
-ui: false
-});
-
-// gulp.watch('_assets/index.html', function () {
-//     gulp.start('css:build');
-//   });
-
 });
 
 gulp.task('default', ['build', 'watch']);

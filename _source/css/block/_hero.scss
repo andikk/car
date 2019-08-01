@@ -230,10 +230,14 @@
         padding-top: 44px;
         padding-left: 27px;
       }
+
+      &__block_image {
+        margin-top: 31px;
+      }
     }
 
     &__title {
-      padding-top: 24px;
+      padding-top: 19px;
       margin-bottom: 17px;
       padding-left: 32px;
       margin-left: -28px;
@@ -255,6 +259,7 @@
 
       &_cheaper {
         margin-top: 0;
+        margin-left: -5px;
       }
     }
 
