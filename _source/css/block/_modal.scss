@@ -93,11 +93,8 @@
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 10px;
+    color:#979797;
     border: 1px solid #979797;
-
-    &:placeholder {
-      color:#979797;
-    }
 
     &_car {
       display: block;
@@ -109,12 +106,16 @@
       width: 30%;
     }
 
+    &:hover, &:active, &:focus {
+      box-shadow: 0px 2px 16.2px 2.8px rgba(0,0,0,0.1);
+      outline: none;
+    }
+
   }
 
   &__agreement-wrapper {
     padding-left: 10px;
     padding-right: 10px;
-
   }
 
   &__link {
@@ -136,14 +137,14 @@
       left: -16px;
       width: 20px;
       height: 20px;
-      background-image: url('../svg/sprite.svg#checkbox-empty.svg');
+      background-image: url('../img/checkbox-empty.svg');
       background-repeat: no-repeat;
       background-position: center;
     }
   }
 
   &__checkbox:checked + &__label::before {
-    background-image: url('../svg/sprite.svg#checkbox-checked.svg');
+    background-image: url('../img/checkbox-checked.svg');
   }
 
   &__button {

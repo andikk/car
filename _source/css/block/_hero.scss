@@ -61,6 +61,13 @@
   }
 
   &__link {
+
+    &_cheaper {
+      border-bottom-width: 3px;
+      color: $primary-color;
+      border-bottom-style: dotted;
+    }
+
     display: inline-block;
     font-family: $font_display;
     font-size: 16px;
@@ -71,18 +78,25 @@
     margin-top: 8px;
     position: relative;
     margin-left: 10px;
+    border-bottom: 1px solid $attention_color;
 
     &:hover {
       border-bottom-color: $secondary_color;
     }
 
-    &_cheaper {
-      border-bottom-width: 3px;
-      color: $primary-color;
-      border-bottom-style: dotted;
+    &:active {
+      color: $active_color;
     }
 
-    border-bottom: 1px solid $attention_color;
+    &:focus {
+      color: $active_color;
+      outline: none;
+    }
+
+    &:visited {
+      color: #8a1f1f;
+    }
+
   }
 
   &__button {

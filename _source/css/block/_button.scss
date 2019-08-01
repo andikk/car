@@ -20,10 +20,12 @@
   }
 
   &:active {
-    opacity: 1;
+    background-color: $active_color;
   }
 
   &:focus {
+    background-color: $active_color;
+    outline: none;
   }
 
 }

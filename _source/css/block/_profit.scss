@@ -13,6 +13,8 @@
     padding-top: 30px;
     padding-bottom: 30px;
     color: $secondary_color;
+    border-bottom: 1px solid $border_color;
+    transition: background-color 250ms ease;
     &:hover {
       background-color: $attention_color;
       & .profit__number {
@@ -73,6 +75,7 @@
       padding-right: 10px;
       border-left: 1px solid $border_color;
       border-right: 1px solid $border_color;
+      border-bottom: none;
       width: 25%;
       padding-left: 22px;
       padding-right: 22px;

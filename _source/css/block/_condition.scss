@@ -89,9 +89,17 @@
 
   &__link {
     color: $primary_color;
-    border: none;
+
     &:hover {
-      border: none;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: #626262;
+    }
+
+    &:focus {
+     color: #626262;
     }
   }
 }

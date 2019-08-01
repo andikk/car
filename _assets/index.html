@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +51,7 @@
             <a class="menu__link" href="#">Prius</a>
           </li>
         </ul>
-        <button class="menu__button js-menu__button" type="button"><span class="visually-hidden">Меню</span></button>
+        <button class="menu__button js-menu__button" type="button" tabindex="-1"><span class="visually-hidden">Меню</span></button>
       </div>
     </nav>
 
@@ -90,7 +90,7 @@
           </table>
 
           <div class="hero__footer">
-            <a class="hero__link" href="#"><span class="hero__icon">
+            <a class="hero__link" href="#testdrive"><span class="hero__icon">
               <svg width="24" height="24" viewBox="0 0 24 24">
                 <use xlink:href="svg/sprite.svg#test-drive"></use>
               </svg>
@@ -114,6 +114,7 @@
   <main>
 
     <section class="profit page__profit-section">
+      <h2 class="visually-hidden">Преимущества</h2>
       <ul class="profit__list page__container">
         <li class="profit__item profit__item">
           <p class="profit__number">01</p>
@@ -175,7 +176,7 @@
         <p class="offer__text">Получите максимально выгодные условия на покупку <span>Toyota</span></p>
         <form class="request">
           <fieldset class="request__fieldset">
-            <input class ="request__email" required type="email" tabindex="0" placeholder="Введите номер телефона">
+            <input class ="request__tel" required type="tel" tabindex="0" placeholder="Введите номер телефона">
             <button type="submit" class="button request__button" tabindex="0">Получить предложение</button>
           </fieldset>
         </form>
@@ -184,11 +185,11 @@
 
     <section class="contact page__contact-section">
       <h2 class="page__title-section contact__title-section">Контакты</h2>
-      <div class="contact__map">
-      </div>
+      <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2275.425878456647!2d61.373300416175205!3d55.22828368041637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5ec9c1e6ea12b%3A0x22b4ab18633f0667!2z0KLQvtC50L7RgtCwINCm0LXQvdGC0YAg0KfQtdC70Y_QsdC40L3RgdC6INCh0LXQstC10YA!5e0!3m2!1sru!2sru!4v1564649274209!5m2!1sru!2sru" allowfullscreen></iframe>
     </section>
 
     <section class="condition page__condition-section">
+      <h2 class="visually-hidden">Условия акции</h2>
       <div class="condition__wrapper page__container">
         <a href="#header" class="button condition__button"></a>
         <a href="#conditions" class="condition__title">Условия акции</a>
