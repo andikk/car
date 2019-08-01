@@ -45,6 +45,7 @@
     box-shadow: inset 0 4px 4px -4px rgba(93, 32, 32, 0.1);
     padding-bottom: 4px;
     padding-top: 4px;
+    transition: background-color 250ms ease;
 
     &:hover {
       background-color: $attention_color;
