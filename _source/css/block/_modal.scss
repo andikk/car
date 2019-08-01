@@ -136,14 +136,14 @@
       left: -16px;
       width: 20px;
       height: 20px;
-      background-image: url('../svg/sprite.svg#icon-checkbox-empty.svg');
+      background-image: url('../svg/sprite.svg#checkbox-empty.svg');
       background-repeat: no-repeat;
       background-position: center;
     }
   }
 
   &__checkbox:checked + &__label::before {
-    background-image: url('../svg/sprite.svg#icon-checkbox-checked.svg');
+    background-image: url('../svg/sprite.svg#checkbox-checked.svg');
   }
 
   &__button {
