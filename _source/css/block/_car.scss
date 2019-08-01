@@ -56,7 +56,7 @@
 
   &__title {
     font-family: $font_display;
-    font-size: 20px; // 24
+    font-size: 20px;
     line-height: 34px;
     font-weight: bold;
     margin-top: 0;
@@ -92,7 +92,7 @@
 
     &_bold {
       font-family: $font_display;
-      font-size: 12px; //14
+      font-size: 12px;
       line-height: 23px;
       font-weight: bold;
       text-transform: uppercase;
@@ -100,7 +100,7 @@
 
     &_red {
       font-family: $font_display;
-      font-size: 18px; //24
+      font-size: 18px;
       line-height: 32px;
       font-weight: bold;
       color: $attention_color;
@@ -109,7 +109,7 @@
 
     &_detail {
       font-family: $font_display;
-      font-size: 12px; //16
+      font-size: 12px;
       line-height: 24px;
       font-weight: normal;
       opacity: 0.7;
@@ -118,7 +118,7 @@
 
     &_tel {
       font-family: $font_text;
-      font-size: 16px;  //18
+      font-size: 16px;
       line-height: 23px;
       font-weight: bold;
       color: $primary_color;
@@ -143,7 +143,7 @@
     }
 
     &__description {
-      width: 70%;
+      width: 62%;
       display: flex;
       justify-content: space-around;
     }

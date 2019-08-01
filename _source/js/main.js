@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 
   $('.js-hero__button').on('click', function () {
-    $('.js-modal').css('display', 'flex');
+    $('.js-modal').css('display', 'block');
     $('.js-page').addClass('page__fade');
   });
 
